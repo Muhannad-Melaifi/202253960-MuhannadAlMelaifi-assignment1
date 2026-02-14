@@ -10,28 +10,26 @@ This project is a personal portfolio web app built with:
 ### `index.html`
 Contains:
 - Header navigation with links to page sections
-- Hero section with greeting pill
+- Hero section with greetings
 - About section with intro + skills
 - Projects section with two project cards
-- Contact section with a form (front-end only)
+- Contact section with a form (no backend)
 - Footer with dynamic year
 
 ## Styling (`css/styles.css`)
 ### Responsive Design
 - Desktop uses multi-column grids (`grid-template-columns`)
 - Tablet/mobile collapses to single-column layout using media queries:
-  - `@media (max-width: 920px)` for layout stacking
-  - `@media (max-width: 720px)` for mobile navigation dropdown
+
 
 ### Theme System
-- Uses CSS variables (custom properties) in `:root`
-- Light mode overrides variables in `:root[data-theme="light"]`
+- Uses CSS variables (custom properties) in 
+- Light mode overrides variables in 
 
 ## JavaScript (`js/script.js`)
 ### Features
 1. Theme toggle
    - Toggles `data-theme` attribute on `<html>`
-   - Saves preference in `localStorage`
 
 2. Time-based greeting
    - Reads current hour and sets a greeting message in the hero section
